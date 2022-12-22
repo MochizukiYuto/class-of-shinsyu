@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+header {
+    text-justify: auto;
+    font-family: "HGP行書体";
+    font-size: 100%;
+    padding: 15px;
+}
+
+main {
+    margin-left: auto;
+    background-color: blanchedalmond;
+}
+
+.cook1 {
+    position: relative;
+    text-align: center;
+}
+
+.cook1::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+}
+
+.fadein {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    color:rgb(247, 218, 147);
+    opacity: 0;
+    animation-name: "fadein";
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(20px)
+    }
+}
+
+.cook2 {
+    text-align: center;
+}
+
+.cook3 {
+    text-align: center;
+}
+
+.cook4 {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    width: auto;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+h2 {
+    padding-left: 50px;
+}
+
+.underline {
+    border-bottom: 7px double #744924;
+}
+
+.text {
+    padding-left: 50px;
+}
+
+.concept {
+    display: inline-block;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    border: 10px ridge #744924;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+
+h2 {
+    font-family: "MS ゴシック";
+    font-size: 30px;
+}
+
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition:all 0.5s;
+}
+  
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.strong {
+    color: red;
+}
+
+.backcolor {
+    background-color: #744924;
+    border-radius: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: blanchedalmond;
+}
+
+.motivation-list {
+    padding-left: 50px;
+    padding-top: 10px;
+}
